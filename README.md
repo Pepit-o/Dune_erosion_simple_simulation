@@ -1,3 +1,15 @@
+Projet réalisé dans le cadre d'un **TIPE** (Travail d'Initiative Personnelle
+Encadré).
+---
+## Objectif du TIPE
+
+L'objectif était de comparer la dynamique d'une dune nue avec celle d'une dune
+stabilisée par des plantes par rapport à la érosion de la dune due au vent. 
+Ce modèle numérique reposant sur des règles simples
+et un calcul probabiliste permet de visualiser l'impact des racines sur la
+retenue des grains de sable.
+
+
 # Modélisation de la dispersion d'une dune de sable
 
 Ce projet de TIPE modélise l'évolution d'une dune sous l'effet du vent. La dune
@@ -25,13 +37,13 @@ pip install numpy matplotlib scipy
 - `image(n, tour)` et `image_bis(n, x, tour)` produisent une image *matplotlib*
   comparant la dune avant et après diffusion.
 - `profil_lissé(hauteurs_à_vide, hauteurs_après_soufflage, d1, d2, nom)` trace
-  des profils expérimentaux lissés pour comparaison.
+  des profils expérimentaux lissés par interpolation polynomiale pour comparaison.
 
 Les fonctions `check_zeros` et `check_zeros_2` évaluent l'exposition d'un grain
 (nombre de voisins vides) et détectent la présence éventuelle de racines. Cette
 information est utilisée par `proba`, qui calcule la probabilité de déplacement
 de chaque grain. `gravity` fait ensuite retomber les grains isolés pour éviter
-qu'ils ne « flottent » dans la matrice.
+qu'ils ne "flottent" dans la matrice.
 
 ## Lancer une simulation
 
@@ -46,14 +58,3 @@ dune_simulation(51, 10, 0.8)
 
 Les paramètres `tour` (nombre d'itérations) et `temps` (pause entre chaque tour)
 permettent d'observer progressivement la dispersion des grains.
-
-## Objectif du TIPE
-
-L'objectif était de comparer la dynamique d'une dune nue avec celle d'une dune
-stabilisée par des plantes. Ce modèle numérique reposant sur des règles simples
-et un calcul probabiliste permet de visualiser l'impact des racines sur la
-retenue des grains de sable.
-
----
-Projet réalisé dans le cadre d'un **TIPE** (Travail d'Initiative Personnelle
-Encadré).
