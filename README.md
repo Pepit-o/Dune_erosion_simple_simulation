@@ -58,3 +58,13 @@ dune_simulation(51, 10, 0.8)
 
 Les paramètres `tour` (nombre d'itérations) et `temps` (pause entre chaque tour)
 permettent d'observer progressivement la dispersion des grains.
+
+## Illustrations
+
+Illustration du profil d'une dune sans végétation avant et après diffusion :
+
+![Dune témoin](img_tipe/tipe_rendu_image.png)
+
+Illustration de la dune stabilisée par des racines :
+
+![Dune avec racines](img_tipe/tipe_rendu_image_bis.png)
