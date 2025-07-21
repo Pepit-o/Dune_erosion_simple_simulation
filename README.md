@@ -1,6 +1,23 @@
 Projet réalisé dans le cadre d'un **TIPE** (Travail d'Initiative Personnelle
 Encadré).
 ---
+## À propos
+
+Ce projet est né d'une réflexion sur l'application du biomimétisme pour
+protéger les dunes face à l'érosion éolienne. Les réseaux racinaires des
+végétaux stabilisent naturellement le sable. Nous avons cherché à savoir si
+des racines artificielles pouvaient remplir le même rôle. Afin de tester cette
+hypothèse, nous avons mis en place une simulation informatique simple. Elle
+modélise la dune sous forme de matrice et applique des règles probabilistes de
+déplacement des grains de sable.
+
+Le code a été conçu étape par étape en Python. Après avoir modélisé la dune et
+ses racines potentielles, nous avons introduit des fonctions pour gérer le vent,
+la gravité et l'affichage. Les bibliothèques `numpy`, `scipy` et `matplotlib`
+nous ont permis d'implémenter rapidement les calculs et la visualisation.
+Au fil des essais, nous avons ajusté les paramètres et structuré le code pour
+comparer facilement l'effet de racines naturelles ou artificielles sur la
+dispersion du sable.
 ## Objectif du TIPE
 
 L'objectif était de comparer la dynamique d'une dune nue avec celle d'une dune
